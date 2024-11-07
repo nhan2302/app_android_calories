@@ -1,0 +1,67 @@
+<!-- activity_add_food.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skygreen"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên món ăn" />
+
+    <EditText
+        android:id="@+id/editTextCalories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calo (kcal)"
+        android:inputType="number" />
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_height="204dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="173dp">
+
+            <EditText
+                android:id="@+id/multiLineEditText"
+                android:layout_width="match_parent"
+                android:layout_height="173dp"
+                android:background="@android:drawable/edit_text"
+                android:gravity="top"
+                android:hint="cách nấu món ăn"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:maxLines="10"
+                android:padding="10dp"
+                android:scrollbars="vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cam"
+        android:text="Chọn ảnh" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/cam"
+        android:text="Lưu" />
+
+</LinearLayout>

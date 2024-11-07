@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="food_image">your food_image goes here</string>
+</resources>
